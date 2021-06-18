@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>카툰네트워크</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 홈화면 추가시 아이콘표시 -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="app_icon.png">
+    <!-- common css-->
+    <link rel="stylesheet" href="common/css/common1.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="maincss/main.css">
+    <!--google font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="common/js/jquery-1.8.3.min.js"></script>
+    <script src="common/js/jquery-migrate-1.4.1.min.js"></script>
+    <!--common js -->
+    <script src="common/js/common1.js"></script>
+    <!-- main js -->
+    <script src="mainjs/main.js"></script>
+    <!--top btn js -->
+    <script src="common/js/easing.js"></script>
+    <script src="common/js/topbtn.js"></script>
+    <!-- 팝업(모달)창 js -->
+    <script src="mainjs/mainpopup.js"></script>
+</head>
+
+<body>
+    <div id="skip_nav">
+        <a href="#gnb">네비게이션 바로가기</a>
+        <a href="#content">본문 바로가기</a>
+    </div>
+    <span class="top_btn">
+        <a href="javascript:void(0)"><img src="common/imgs/btn.png" alt="top_btn"></a>
+    </span>
+    <div id="wrap">
+        <header id="header">
+            <div class="header_inner">
+                <h1 id="logo"><a href="index.html"><img src="common/imgs/logo.png" alt="로고이미지"></a></h1>
+                <nav id="gnb">
+                    <ul class="main_menu">
+                        <li><a href="sub1/sub1.html" class="depth m1">게임</a>
+                            <ul class="sub_menu">
+                                <!-- <li><a href="sub1/sub1_1.html">테일즈런너</a></li>
+                                <li><a href="sub1/sub1_2.html">귀혼</a></li>
+                                <li><a href="sub1/sub1_3.html">Z9별</a></li> -->
+                                <li><a href="https://main.cartoonnetworkkorea.com/game/game_list.php">미니게임</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="sub2/sub2.html" class="depth m2">인기시리즈</a>
+                            <ul class="sub_menu">
+                                <li><a href="sub2/sub2_1.html">벤10</a></li>
+                                <li><a href="sub2/sub2_2.html">위비베어스</a></li>
+                                <li><a href="sub2/sub2_3.html">톰과제리</a></li>
+                                <li><a href="sub2/sub2_4.html">파워퍼프걸</a></li>
+                                <li><a href="sub2/sub2_5.html">루니툰</a></li>
+                                <li><a href="sub2/sub2_6.html">덱스터의 실험실</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="sub3/sub3.html" class="depth m3">프로그램안내</a>
+                            <ul class="sub_menu">
+                                <li><a href="sub3/sub3_1.html">전체 프로그램</a></li>
+                                <li><a href="sub3/sub3_2.html">방영중 프로그램</a></li>
+                                <li><a href="sub3/sub3_3.html">이달의 프로그램</a></li>
+                                <li><a href="sub3/sub3_4.html">방송 편성표</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="sub4/sub4.html" class="depth m4">이벤트</a>
+                            <ul class="sub_menu">
+                                <li><a href="sub4/sub4_1.html">진행중인 이벤트</a></li>
+                                <li><a href="sub4/sub4_2.html">새소식</a></li>
+                                <li><a href="sub4/sub4_3.html">당첨자발표</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header_icon">
+                    <span class="material-icons profile_icon"><a href="#">account_circle</a></span>                        
+                    <span class="material-icons search_icon"><a href="#">search</a></span>
+                </div>
+            </div>
+            <div class="menu_box"></div>
+        </header>
+        <div id="visual">
+            <h2 class="hidden">콘텐츠 영역</h2>
+            <video type="video/mp4" src="video/main_slide.mp4" autoplay muted loop></video>
+            <div class="section_01">
+            <!-- 오늘 TV 뭐 보지? -->
+                <div class="main_today">
+                    <div class="main_today_inner">
+                        <h3><a href="#">오늘 TV 뭐 보지?<span>편성표 전체보기</span></a></h3>
+                        <div class="main_new_list" id="main_today">
+                            <ul class="num_03" id="todaylegth">
+                                <li>
+                                    <div class="main_item_inner">
+                                        <a href="#">
+                                            <span class="time">AM 9:00</span>
+                                            <span class="item_title">핀과제이크</span>
+                                            <img src="imgs/item01.png" alt="핀과제이크 로고이미지" class="logo">
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="today_check">
+                                    <div class="main_item_inner">
+                                        <a href="#">
+                                            <span class="time">AM 9:30</span>
+                                            <span class="item_title">또봇</span>
+                                            <img src="imgs/item02.png" alt="또봇 로고이미지" class="logo">
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="main_item_inner">
+                                        <a href="#">
+                                            <span class="time">AM 10:00</span>
+                                            <span class="item_title">파워퍼프걸</span>
+                                            <img src="imgs/item03.png" alt="파워퍼프걸 로고이미지" class="logo">
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            <!-- Best movie -->
+            <h3 class="st_tit_01">BEST MOVIE</h3>
+            <div class="slide_gallery_box">
+                <div class="slide_gallery">
+                    <div class="gallery">
+                        <ul>
+                            <li class="gall"><a href="#">블루</a></li>
+                            <li class="gall02"><a href="#">맨디</a></li>
+                            <li class="gall03"><a href="#">덱스터</a></li>
+                            <li class="gall04"><a href="#">커리지</a></li>
+                        </ul>               
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!--Rerun-->
+            <div class="section_02">
+                <h3 class="st_tit_02">RERUN</h3>
+                <div class="video">
+                    <iframe width="800px" height="500px" src="https://www.youtube.com/embed/jx47OOShYgo?rel=0&amp;autoplay=1&mute=1&amp;loop=1;playlist=영상키값" frameborder="0">
+                    </iframe>
+                </div class="video">
+            </div>
+            <!--Game-->
+            <div class="section_03">
+                <h3 class="st_tit_03">GAME</h3>
+                <div class="game_list_box">
+                    <div class="game_list">
+                        <div class="game">
+                            <ul>
+                                <li class="gl"><a href="http://hon.cartoonnetworkkorea.com/">귀혼</a></li>
+                                <li class="gl02"><a href="http://z9star.cartoonnetworkkorea.com/">지구별</a></li>
+                                <li class="gl03"><a href="https://tr.cartoonnetworkkorea.com/event/2021/05/04_Dev_intro2/event_p.asp">테일즈런너</a></li>
+                                <li class="gl04"><a href="https://main.cartoonnetworkkorea.com/game/game_list.php">미니게임</a></li>
+                            </ul>               
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Event-->
+            <div class="section_04">
+                <h3 class="st_tit_04">EVENT</h3>
+                <div class="slide_event_box">
+                    <div class="slide_event">
+                        <div class="event">
+                            <ul>
+                                <li class="ev"><a href="#">이벤트3</a></li>
+                                <li class="ev02"><a href="#">이벤트2</a></li>
+                                <li class="ev03"><a href="#">이벤트3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        <footer id="footer">
+            <div class="footer_inner">
+                <div class="footer_left">
+                    <div class="footer_logo">
+                        <span class="footer_logo_icon">
+                            <a href="index.html"><img src="common/imgs/footer_logo.png" alt="푸터로고이미지"></a>
+                        </span>
+                    </div>
+                </div>
+                <div class="footer_center">
+                    <ul class="footer_menu">
+                        <li><a href="#">글로벌 CN</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">개인정보처리방침 쉬운버전</a></li>
+                        <li><a href="#">사이트맵</a></li>
+                        <li><a href="#">카툰큐톤게시판</a></li>
+                        <li><a href="#">부메랑큐톤게시판</a></li>
+                        <li><a href="#">광고문의</a></li>
+                    </ul>
+                    <div class="youtube">
+                        <a href="https://www.youtube.com/user/cartoonnetworkkr"><img src="common/imgs/youtube.png" alt="유튜브이동이미지"></a>
+                    </div>
+                    <p>Use of this site signifies your agreement to the Terms of Use.<br>
+                        TM & ⓒ 2021 Cartoon Network. A WarnerMedia Company. All Rights Reserved.<br>
+                        Cartoon Network Korea is home to your favourite cartoons, VOD and free games. Play games online with Cartoon Network characters
+                        from Ben10, Adventure Time, We Bare Bears, Regular Show, The Amazing World of Gumball and more.
+                    </p>
+                </div>
+                <div class="footer_right"></div>
+            </div>
+        </footer>
+    </div>
+    <!-- 팝업(모달)창 -->
+    <div id="showimage" style="position: absolute;top: 200px;left: 100px;width: 322px;height: 322px; z-index: 110;">
+       <div class="pop_img">
+           <img src="popup/popup.png" alt="상업적 목적이 아닌 개인 포트폴리오 용도로 제작되었다는 의미가 담긴 이미지 그 출처가 따로 있음을 밝힙니다.">
+        </div>
+        <form action="" style="font-size: 12px;text-align: center;color: #fff;">
+            <input type="checkbox" id="Notice" name="Notice" title="오늘은 이창을 열지 않음 선택상자">
+            <label for="Notice">오늘은 이창을 열지 않음.</label>
+            <a href="#" onclick="closewin();hidebox();return false;">[close]</a>
+        </form>
+        <script>
+                function closewin(){
+                    let chk = document.getElementById("Notice")
+                    if(chk.checked){
+                        setCookie("Notice","done",1); //날짜 변경 (1을 변경하면 됨 (7일=7)
+                    }
+                }
+                if(getCookie("Notice")=="done"){
+                    hidebox();
+                }
+        </script>
+    </div>
+</body>
+
+</html>
